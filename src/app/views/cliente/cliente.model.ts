@@ -4,5 +4,5 @@ export interface Cliente {
 	cpf: String;
 	email: String;
     telefone: String;
-	dataCadastro: String;
+	dataCadastro?: String;
 }
