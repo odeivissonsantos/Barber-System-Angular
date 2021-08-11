@@ -26,4 +26,9 @@ export class ClienteService {
     const url = `${this.baseUrl}/api/clientes`
     return this.http.post<Cliente>(url, cliente);
   }
+
+  deletar(id: String): Observable<void> {
+    const url = `${this.baseUrl}/api/clientes/${id}`
+    return this.http.delete<void>(url)
+  }
 }

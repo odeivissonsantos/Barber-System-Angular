@@ -1,6 +1,6 @@
 import { ClienteService } from './../cliente.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Cliente } from '../cliente.model';
 
 @Component({
@@ -19,7 +19,7 @@ cliente: Cliente = {
   telefone: ''
 }
 
-  constructor(private service: ClienteService, private route: ActivatedRoute) { }
+  constructor(private service: ClienteService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.cliente.id! = this.route.snapshot.paramMap.get('id')!
@@ -30,6 +30,16 @@ cliente: Cliente = {
     this.service.buscarPorId(this.cliente.id!).subscribe((resposta) => {
       this.cliente = resposta
     })
+  }
+
+  deletar(): void {
+    this.service.deletar(this.cliente.id!).subscribe((resposta) => {
+      this.router.navigate(['clientes'])
+    })
+  }
+
+  voltar(): void {
+    this.router.navigate(['clientes'])
   }
   
 }
