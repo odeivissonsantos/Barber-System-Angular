@@ -24,7 +24,7 @@
             <td>{{ clientes.telefone }}</td>
             <td>{{ clientes.dataCadastro }}</td>
             <td>
-              <a href="#" class="btn btn-warning">Editar</a>
+              <a routerLink="atualizar/{{ clientes.id }}" class="btn btn-warning">Editar</a>
               <a routerLink="deletar/{{ clientes.id }}" class="btn btn-danger">Excluir</a>
             </td>
           </tr>

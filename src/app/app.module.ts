@@ -13,6 +13,7 @@ import { HomeComponent } from './views/home/home.component';
 import { ClienteListarComponent } from './views/cliente/cliente-listar/cliente-listar.component';
 import { ClienteCriarComponent } from './views/cliente/cliente-criar/cliente-criar.component';
 import { ClienteDeletarComponent } from './views/cliente/cliente-deletar/cliente-deletar.component';
+import { ClienteAtualizarComponent } from './views/cliente/cliente-atualizar/cliente-atualizar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ClienteDeletarComponent } from './views/cliente/cliente-deletar/cliente
     HomeComponent,
     ClienteListarComponent,
     ClienteCriarComponent,
-    ClienteDeletarComponent
+    ClienteDeletarComponent,
+    ClienteAtualizarComponent
   ],
   imports: [
     BrowserModule,

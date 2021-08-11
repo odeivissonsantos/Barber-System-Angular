@@ -31,4 +31,10 @@ export class ClienteService {
     const url = `${this.baseUrl}/api/clientes/${id}`
     return this.http.delete<void>(url)
   }
+
+  atualizar(cliente: Cliente): Observable<void> {
+    const url = `${this.baseUrl}/api/clientes/${cliente.id}`
+    return this.http.put<void>(url, cliente)
+  }
+
 }

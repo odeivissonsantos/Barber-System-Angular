@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ClienteListarComponent } from './views/cliente/cliente-listar/cliente-listar.component';
 import { HomeComponent } from 'src/app/views/home/home.component'
+import { ClienteAtualizarComponent } from './views/cliente/cliente-atualizar/cliente-atualizar.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'clientes/deletar/:id',
     component: ClienteDeletarComponent
+  },
+  {
+    path: 'clientes/atualizar/:id',
+    component: ClienteAtualizarComponent
   }
 ];
 
