@@ -16,6 +16,12 @@ export class ClienteService {
     const url = `${this.baseUrl}/api/clientes`
     return this.http.get<Cliente[]>(url)
   }
+
+  buscarPorId(id: String): Observable<Cliente> {
+    const url = `${this.baseUrl}/api/clientes/${id}`
+    return this.http.get<Cliente>(url)
+  }
+
   salvar(cliente: Cliente): Observable<Cliente>{
     const url = `${this.baseUrl}/api/clientes`
     return this.http.post<Cliente>(url, cliente);

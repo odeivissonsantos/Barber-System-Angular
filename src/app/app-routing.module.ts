@@ -1,3 +1,4 @@
+import { ClienteDeletarComponent } from './views/cliente/cliente-deletar/cliente-deletar.component';
 import { ClienteCriarComponent } from './views/cliente/cliente-criar/cliente-criar.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'clientes/criar',
     component: ClienteCriarComponent
+  },
+  {
+    path: 'clientes/deletar/:id',
+    component: ClienteDeletarComponent
   }
 ];
 
