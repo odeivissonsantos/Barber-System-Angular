@@ -14,6 +14,10 @@ import { ClienteListarComponent } from './views/cliente/cliente-listar/cliente-l
 import { ClienteCriarComponent } from './views/cliente/cliente-criar/cliente-criar.component';
 import { ClienteDeletarComponent } from './views/cliente/cliente-deletar/cliente-deletar.component';
 import { ClienteAtualizarComponent } from './views/cliente/cliente-atualizar/cliente-atualizar.component';
+import { BarbeiroListarComponent } from './views/barbeiro/barbeiro-listar/barbeiro-listar.component';
+import { BarbeiroCriarComponent } from './views/barbeiro/barbeiro-criar/barbeiro-criar.component';
+import { BarbeiroDeletarComponent } from './views/barbeiro/barbeiro-deletar/barbeiro-deletar.component';
+import { BarbeiroAtualizarComponent } from './views/barbeiro/barbeiro-atualizar/barbeiro-atualizar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { ClienteAtualizarComponent } from './views/cliente/cliente-atualizar/cli
     ClienteListarComponent,
     ClienteCriarComponent,
     ClienteDeletarComponent,
-    ClienteAtualizarComponent
+    ClienteAtualizarComponent,
+    BarbeiroListarComponent,
+    BarbeiroCriarComponent,
+    BarbeiroDeletarComponent,
+    BarbeiroAtualizarComponent
   ],
   imports: [
     BrowserModule,

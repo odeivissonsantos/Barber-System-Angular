@@ -1,3 +1,7 @@
+import { BarbeiroAtualizarComponent } from './views/barbeiro/barbeiro-atualizar/barbeiro-atualizar.component';
+import { BarbeiroDeletarComponent } from './views/barbeiro/barbeiro-deletar/barbeiro-deletar.component';
+import { BarbeiroCriarComponent } from './views/barbeiro/barbeiro-criar/barbeiro-criar.component';
+import { BarbeiroListarComponent } from './views/barbeiro/barbeiro-listar/barbeiro-listar.component';
 import { ClienteDeletarComponent } from './views/cliente/cliente-deletar/cliente-deletar.component';
 import { ClienteCriarComponent } from './views/cliente/cliente-criar/cliente-criar.component';
 import { NgModule } from '@angular/core';
@@ -27,7 +31,24 @@ const routes: Routes = [
   {
     path: 'clientes/atualizar/:id',
     component: ClienteAtualizarComponent
+  },
+  {
+    path: 'barbeiros',
+    component: BarbeiroListarComponent
+  },
+  {
+    path: 'barbeiros/criar',
+    component: BarbeiroCriarComponent
+  },
+  {
+    path: 'barbeiros/deletar/:id',
+    component: BarbeiroDeletarComponent
+  },
+  {
+    path: 'barbeiros/atualizar/:id',
+    component: BarbeiroAtualizarComponent
   }
+
 ];
 
 @NgModule({
