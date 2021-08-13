@@ -24,7 +24,7 @@ export class ServicoprestadoListarComponent implements OnInit {
   }
 
   navegarParaServicoPrestadoCriar() {
-    this.router.navigate(["servico-prestado/criar"])
+    this.router.navigate(["servicos-prestados/criar"])
   }
 
 }

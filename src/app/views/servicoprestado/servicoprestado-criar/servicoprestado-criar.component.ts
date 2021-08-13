@@ -22,12 +22,12 @@ export class ServicoprestadoCriarComponent implements OnInit {
 
   salvar(): void {
     this.service.salvar(this.servicoprestado).subscribe((resposta) => {
-      this.router.navigate(['servico-prestado'])
+      this.router.navigate(['servicos-prestados'])
     })
   }
 
   voltar(): void {
-    this.router.navigate(['servico-prestado'])
+    this.router.navigate(['servicos-prestados'])
   }
 
 }
