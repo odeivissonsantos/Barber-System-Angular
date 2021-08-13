@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="titulo">
+        <h2>Serviços</h2>
+    </div>
+    <div>
+      <button class="btn btn-success" (click)="navegarParaServicoPrestadoCriar()">Novo Serviço</button>
+    </div>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Ação</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let servicoPrestado of servicoprestado">
+            <td>{{ servicoPrestado.id }}</td>
+            <td>{{ servicoPrestado.descricao }}</td>
+            <td>{{ servicoPrestado.valor }}</td>
+            <td>
+              <a routerLink="atualizar/{{ servicoPrestado.id }}" class="btn btn-warning">Editar</a>
+              <a routerLink="deletar/{{ servicoPrestado.id }}" class="btn btn-danger">Excluir</a>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>

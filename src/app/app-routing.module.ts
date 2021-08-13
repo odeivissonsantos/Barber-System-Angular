@@ -1,3 +1,7 @@
+import { ServicoprestadoAtualizarComponent } from './views/servicoprestado/servicoprestado-atualizar/servicoprestado-atualizar.component';
+import { ServicoprestadoDeletarComponent } from './views/servicoprestado/servicoprestado-deletar/servicoprestado-deletar.component';
+import { ServicoprestadoCriarComponent } from './views/servicoprestado/servicoprestado-criar/servicoprestado-criar.component';
+import { ServicoprestadoListarComponent } from './views/servicoprestado/servicoprestado-listar/servicoprestado-listar.component';
 import { BarbeiroAtualizarComponent } from './views/barbeiro/barbeiro-atualizar/barbeiro-atualizar.component';
 import { BarbeiroDeletarComponent } from './views/barbeiro/barbeiro-deletar/barbeiro-deletar.component';
 import { BarbeiroCriarComponent } from './views/barbeiro/barbeiro-criar/barbeiro-criar.component';
@@ -47,6 +51,22 @@ const routes: Routes = [
   {
     path: 'barbeiros/atualizar/:id',
     component: BarbeiroAtualizarComponent
+  },
+  {
+    path: 'servicos-prestados',
+    component: ServicoprestadoListarComponent
+  },
+  {
+    path: 'servicos-prestados/criar',
+    component: ServicoprestadoCriarComponent
+  },
+  {
+    path: 'servicos-prestados/deletar/:id',
+    component: ServicoprestadoDeletarComponent
+  },
+  {
+    path: 'servicos-prestados/atualizar/:id',
+    component: ServicoprestadoAtualizarComponent
   }
 
 ];

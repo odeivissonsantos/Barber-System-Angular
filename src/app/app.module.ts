@@ -18,6 +18,10 @@ import { BarbeiroListarComponent } from './views/barbeiro/barbeiro-listar/barbei
 import { BarbeiroCriarComponent } from './views/barbeiro/barbeiro-criar/barbeiro-criar.component';
 import { BarbeiroDeletarComponent } from './views/barbeiro/barbeiro-deletar/barbeiro-deletar.component';
 import { BarbeiroAtualizarComponent } from './views/barbeiro/barbeiro-atualizar/barbeiro-atualizar.component';
+import { ServicoprestadoListarComponent } from './views/servicoprestado/servicoprestado-listar/servicoprestado-listar.component';
+import { ServicoprestadoCriarComponent } from './views/servicoprestado/servicoprestado-criar/servicoprestado-criar.component';
+import { ServicoprestadoDeletarComponent } from './views/servicoprestado/servicoprestado-deletar/servicoprestado-deletar.component';
+import { ServicoprestadoAtualizarComponent } from './views/servicoprestado/servicoprestado-atualizar/servicoprestado-atualizar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { BarbeiroAtualizarComponent } from './views/barbeiro/barbeiro-atualizar/
     BarbeiroListarComponent,
     BarbeiroCriarComponent,
     BarbeiroDeletarComponent,
-    BarbeiroAtualizarComponent
+    BarbeiroAtualizarComponent,
+    ServicoprestadoListarComponent,
+    ServicoprestadoCriarComponent,
+    ServicoprestadoDeletarComponent,
+    ServicoprestadoAtualizarComponent
   ],
   imports: [
     BrowserModule,
