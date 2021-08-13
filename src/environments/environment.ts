@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://ec2-100-24-116-14.compute-1.amazonaws.com:8080'
+  baseUrl: 'https://api-barber-system.herokuapp.com/'
 };
 
 /*
