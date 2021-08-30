@@ -1,42 +1,28 @@
-<form>
+<form class="container mt-4">
     <h2>Novo Cliente</h2>
-    <div class="container">
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <label>ID</label>
-                <input name="id" [(ngModel)]="cliente.id" type="text" class="form-control" disabled/>
-            </div>
-            <div class="col-md-6">
-                <label>Data de Cadastro</label>
-                <input name="dataCadastro" [(ngModel)]="cliente.dataCadastro" type="text" class="form-control" disabled/>
-            </div>
-        </div>
-
         <div class="row mt-3">
             <div class="col-md-6">
                 <label>Nome Completo*</label>
-                <input name="nome" [(ngModel)]="cliente.nome" type="text" class="form-control" required/>
+                <input name="nome" [(ngModel)]="cliente.nome" type="text" class="form-control" required placeholder="EX: João da Silva Santos"/>
             </div>
             <div class="col-md-6">
                 <label>CPF*</label>
-                <input name="cpf" [(ngModel)]="cliente.cpf" type="text" class="form-control" required/>
+                <input name="cpf" [(ngModel)]="cliente.cpf" type="text" maxlength="11" class="form-control" required placeholder="EX: 12345678900"/>
             </div>
         </div>
 
         <div class="row mt-3">
             <div class="col-md-6">
                 <label>Email*</label>
-                <input name="email" [(ngModel)]="cliente.email" type="email" class="form-control" required />
+                <input name="email" [(ngModel)]="cliente.email" type="email" class="form-control" required placeholder="EX: email@dominio.com.br" />
             </div>
             <div class="col-md-6">
                 <label>Telefone*</label>
-                <input name="telefone" [(ngModel)]="cliente.telefone" type="text" class="form-control" required/>
+                <input name="telefone" [(ngModel)]="cliente.telefone" type="text" class="form-control" maxlength="11" required placeholder="EX: 71999998888"/>
             </div>
         </div>
         <div class="buttons mt-3">
             <button (click)="salvar()" type="submit" class="btn btn-success">Salvar</button>
             <button (click)="voltar()" class="btn btn-success" class="btn btn-warning">Voltar</button>
         </div>
-
-    </div>
 </form>

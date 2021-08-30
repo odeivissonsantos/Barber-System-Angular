@@ -1,5 +1,35 @@
 <nav class="navbar navbar-light bg-primary">
-    <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1" id="span">Barber System</span>
+    <div class="container-fluid justify-content-start">
+      <button class=" navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class=" navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-brand text-white">Barber System</div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+          
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" data-bs-dismiss="offcanvas" routerLink="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/clientes" data-bs-dismiss="offcanvas">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/barbeiros" data-bs-dismiss="offcanvas">Barbeiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/servicos-prestados" data-bs-dismiss="offcanvas">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="" data-bs-dismiss="offcanvas">Agendamentos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</nav>
+  </nav>
