@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-6">
                 <label>CPF*</label>
-                <input name="cpf" [(ngModel)]="cliente.cpf" type="text" class="form-control" required placeholder="EX: 12345678900" />
+                <input name="cpf" [(ngModel)]="cliente.cpf" maxlength="11" type="text" class="form-control" required placeholder="EX: 12345678900" />
             </div>
         </div>
 
@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-6">
                 <label>Telefone*</label>
-                <input name="telefone" [(ngModel)]="cliente.telefone" type="text" class="form-control" required placeholder="EX: 71999998888" />
+                <input name="telefone" [(ngModel)]="cliente.telefone" maxlength="11" type="text" class="form-control" required placeholder="EX: 71999998888" />
             </div>
         </div>
         <div class="buttons mt-3">
